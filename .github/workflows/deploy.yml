@@ -28,8 +28,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # ▼▼ 公開したいフォルダ名をここに指定 ▼▼
-          path: './dist'
+          # ▼▼ ここをドット(.)にすることで直下のファイルを公開します ▼▼
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
